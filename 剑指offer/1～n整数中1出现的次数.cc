@@ -9,7 +9,7 @@ int countDigitOne(int n) {
             else if(a%10 == 1){//0-a/10的当前位有1，且a/10不全，为b+1
                 ones += a / 10 * m + b + 1;
             }
-            else ones += (a / 10) * m + m;//0-a/10的当前位有1
+            else ones += (a / 10 + 1) * m;//0-a/10的当前位有1
         }
         return ones;
     }
